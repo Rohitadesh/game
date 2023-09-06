@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="game.css">  -->
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+        }
+        .container{
+            border:1px solid black;
+            width:600px;
+            height:600px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider{
+            background-image: url('back.jpeg');
+            background-repeat: repeat-x;
+            width: 1200px;
+            height: 100%;
+        animation: slide 3s linear infinite ;
+        }
+        .dino{
+            position: absolute;
+            right: 300px;
+            top:50px;
+        }
+        .img{
+            width:100%;
+            max-width:100%;
+        }
+        .elements{
+            width:50px;
+            border:1px solid red;
+            position: absolute;
+            right:100px;
+            top:50px;
+        }
+        @keyframes slide {
+            0%{
+                transform: translate(0);
+            
+            }
+            100%{
+                transform: translate(-600px);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="slider">
+            
+        </div>
+        <div class="elements">
+           <img src="/ca .png" class="img" alt="hello" />
+        </div>
+        <div class="dino">
+            <img src="/dino1.png" class="img" calt="dino" />  
+        </div>
+    </div>
+    <script src="game.js"></script>     
+</body>
+</html>
